@@ -1,0 +1,69 @@
+<html>
+<head> 
+
+<title> My family book </title>
+
+</head> 
+
+<body>
+
+<img src="https://i.ytimg.com/vi/OPLE-4rPt40/maxresdefault.jpg" style="width = 30%;" id="family_member_name">
+
+<h4 id="family_member_name"></h4>
+
+<button onclick="update();"> Next </button>
+
+
+var images =
+[
+"https://i.ytimg.com/vi/OPLE-4rPt40/maxresdefault.jpg" , "https://thumbs.dreamstime.com/b/happy-mothers-day-african-american-woman-her-little-daughter-baby-vector-flat-illustration-happy-mothers-day-mom-little-215417157.jpg"
+, "https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/36669/father-son-family-clipart-md.png", "https://previews.123rf.com/images/yupiramos/yupiramos1805/yupiramos180521032/101878022-little-girl-daughter-character-vector-illustration-design.jpg"
+
+
+]
+
+var names = [ "family book " , "mom " , "dad" , "me"]
+
+var i = 0;
+function update()
+{
+
+    i++;
+    var numbers_of_family_in_array=3
+    if(i > numbers_of_family_in_array)
+    {
+        i=0;
+
+    }
+      var updatedImage = images[i];
+      var updatedName = names[i];
+
+      document.getElementById("family_member_image").src = updatedImage;
+      document.getElementById("family_member_name").innerHTML = updatedName;
+
+
+
+
+}
+
+
+
+
+
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
